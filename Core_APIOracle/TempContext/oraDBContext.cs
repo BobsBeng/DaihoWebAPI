@@ -15,7 +15,7 @@ public partial class oraDBContext : DbContext
     {
     }
 
-    public virtual DbSet<AsmPRackMovement> AsmPRackMovements { get; set; }
+    public virtual DbSet<AsmPRackMovementR> AsmPRackMovementRs { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
@@ -27,16 +27,15 @@ public partial class oraDBContext : DbContext
             .HasDefaultSchema("DHI_TEST")
             .UseCollation("USING_NLS_COMP");
 
-        modelBuilder.Entity<AsmPRackMovement>(entity =>
+        modelBuilder.Entity<AsmPRackMovementR>(entity =>
         {
-            entity.HasKey(e => new { e.MovementId, e.CoCd }).HasName("ASM_P_RACK_MOVEMENT_PK");
+            entity.HasKey(e => e.HistoryId).HasName("ASM_P_RACK_MOVEMENT_R_PK");
 
-            entity.ToTable("ASM_P_RACK_MOVEMENT");
+            entity.ToTable("ASM_P_RACK_MOVEMENT_R");
 
-            entity.Property(e => e.MovementId)
-                .HasMaxLength(20)
-                .IsUnicode(false)
-                .HasColumnName("MOVEMENT_ID");
+            entity.Property(e => e.HistoryId)
+                .HasPrecision(2)
+                .HasColumnName("HISTORY_ID");
             entity.Property(e => e.CoCd)
                 .HasMaxLength(20)
                 .IsUnicode(false)
@@ -67,6 +66,10 @@ public partial class oraDBContext : DbContext
             entity.Property(e => e.MovementDate)
                 .HasColumnType("DATE")
                 .HasColumnName("MOVEMENT_DATE");
+            entity.Property(e => e.MovementId)
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .HasColumnName("MOVEMENT_ID");
             entity.Property(e => e.MovementReason)
                 .HasMaxLength(2000)
                 .IsUnicode(false)

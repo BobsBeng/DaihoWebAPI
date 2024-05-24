@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\SBS\\CRM Planning\\crm\\Core_APIOracle-master\\Core_APIOracle-master\\Core_APIOracle\\DaihoWebAPI.csproj": {}
+    "D:\\farid\\SourceCode\\DHI\\GitRepo\\DaihoWebAPI\\Core_APIOracle\\DaihoWebAPI.csproj": {}
   },
   "projects": {
-    "D:\\Project\\SBS\\CRM Planning\\crm\\Core_APIOracle-master\\Core_APIOracle-master\\Core_APIOracle\\DaihoWebAPI.csproj": {
+    "D:\\farid\\SourceCode\\DHI\\GitRepo\\DaihoWebAPI\\Core_APIOracle\\DaihoWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\SBS\\CRM Planning\\crm\\Core_APIOracle-master\\Core_APIOracle-master\\Core_APIOracle\\DaihoWebAPI.csproj",
+        "projectUniqueName": "D:\\farid\\SourceCode\\DHI\\GitRepo\\DaihoWebAPI\\Core_APIOracle\\DaihoWebAPI.csproj",
         "projectName": "DaihoWebAPI",
-        "projectPath": "D:\\Project\\SBS\\CRM Planning\\crm\\Core_APIOracle-master\\Core_APIOracle-master\\Core_APIOracle\\DaihoWebAPI.csproj",
-        "packagesPath": "C:\\Users\\robby\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\SBS\\CRM Planning\\crm\\Core_APIOracle-master\\Core_APIOracle-master\\Core_APIOracle\\obj\\",
+        "projectPath": "D:\\farid\\SourceCode\\DHI\\GitRepo\\DaihoWebAPI\\Core_APIOracle\\DaihoWebAPI.csproj",
+        "packagesPath": "C:\\Users\\Farid-PC\\.nuget\\packages\\",
+        "outputPath": "D:\\farid\\SourceCode\\DHI\\GitRepo\\DaihoWebAPI\\Core_APIOracle\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\robby\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Farid-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "net7.0": {
@@ -34,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -64,13 +74,13 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.6, )"
+              "version": "[7.0.18, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.6, )"
+              "version": "[7.0.18, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
@@ -108,6 +118,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.19, 7.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.19, 7.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.19, 7.0.19]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.19, 7.0.19]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -116,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
         }
       }
     }

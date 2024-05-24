@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DaihoWebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7edd4634d5e07af394bde6cbca7fc8b618ad4531")]
 [assembly: System.Reflection.AssemblyProductAttribute("DaihoWebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DaihoWebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
